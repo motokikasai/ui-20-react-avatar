@@ -1,11 +1,11 @@
 import React from "react";
 
-function Avatar(props) {
+function Avatar({ src, size = "", type = "" }) {
   return (
     <section>
-      <h1>hello world</h1>
+      <h1>Customizable Avatar</h1>
       <div className="source">
-        <img src={props.src} alt="from lorempicsum" />
+        <img src={src} className={`size type`} alt="from lorempicsum" />
       </div>
       <p>
         Size <b>m</b> with 60x60
