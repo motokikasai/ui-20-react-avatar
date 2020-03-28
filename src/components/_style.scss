@@ -1,29 +1,64 @@
-h1 {
-  font-size: 2rem;
+body {
+  background: #efeeee;
+  color: rgb(63, 63, 63);
+  font-size: 1.4rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
 }
 
 img {
   width: 60px;
   height: 60px;
+  border-radius: 6px;
+  box-shadow: -9px -9px 16px rgba(255, 255, 255, 0.7),
+    9px 9px 16px rgba(151, 151, 151, 0.7);
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.card:hover img {
+  opacity: 0.8;
+}
+
+.card {
+  padding: 50px;
+  width: 500px;
+  border-radius: 6px;
+  box-shadow: -9px -9px 16px rgba(255, 255, 255, 0.7),
+    9px 9px 16px rgba(151, 151, 151, 0.7);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: -3px -3px 9px rgb(255, 255, 255),
+    3px 3px 9px rgba(151, 151, 151, 0.7);
 }
 
 // Custom Size
-s {
+.s {
   width: 30px;
   height: 30px;
 }
 
-m {
+.m {
   width: 60px;
   height: 60px;
 }
 
-l {
+.l {
   width: 120px;
   height: 120px;
 }
 
-xl {
+.xl {
   width: 200px;
   height: 200px;
+}
+
+.xxl {
+  width: 400px;
+  height: 400px;
 }
