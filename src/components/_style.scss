@@ -12,7 +12,6 @@ main {
 img {
   width: 60px;
   height: 60px;
-  border-radius: 6px;
   box-shadow: -9px -9px 16px rgba(255, 255, 255, 0.7),
     9px 9px 16px rgba(151, 151, 151, 0.7);
   opacity: 1;
@@ -20,7 +19,7 @@ img {
 }
 
 .card:hover img {
-  opacity: 0.8;
+  box-shadow: -3px -3px 9px rgb(255, 255, 255), 3px 3px 9px rgb(151, 151, 151);
 }
 
 .card {
@@ -33,8 +32,7 @@ img {
 }
 
 .card:hover {
-  box-shadow: -3px -3px 9px rgb(255, 255, 255),
-    3px 3px 9px rgba(151, 151, 151, 0.7);
+  box-shadow: -3px -3px 9px rgb(255, 255, 255), 3px 3px 9px rgb(151, 151, 151);
 }
 
 // Custom Size
@@ -61,4 +59,17 @@ img {
 .xxl {
   width: 400px;
   height: 400px;
+}
+
+// Custom Type
+.square {
+  border-radius: 5px;
+}
+
+.rounded {
+  border-radius: 8px;
+}
+
+.circle {
+  border-radius: 50%;
 }
