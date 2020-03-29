@@ -1,28 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import sun from "../../assets/sun.svg";
 import moon from "../../assets/moon.svg";
 
 function Theme() {
   // Theme Switcher callback function
-
-  const themeSwitcher = () => {
-    // if (checkbox.checked) {
-    //   container.classList.add("container-dark");
-    //   header.classList.add("header-dark");
-    //   iconCover.style.right = "34px";
-    //   iconCover.classList.add("cover-dark");
-    // } else {
-    //   container.classList.remove("container-dark");
-    //   header.classList.remove("header-dark");
-    //   iconCover.style.right = "80px";
-    //   iconCover.classList.remove("cover-dark");
-    console.log("checked");
-
-    // }
-  };
-
-  // Add Change Event to theme switcher button/input
-  //   checkbox.addEventListener("change", themeSwitcher);
+  let [check, setCheck] = useState(true);
 
   return (
     <section className="theme-changer">
@@ -32,8 +14,28 @@ function Theme() {
           name="theme"
           id="checkbox"
           className="checkbox"
-          onClick={themeSwitcher}
-          checked={true}
+          checked={check}
+          onChange={() => {
+            const bd = document.body;
+
+            if (check) {
+              bd.style.background = "#323232";
+              bd.style.color = "#dddddd";
+              document.querySelector(".card").style.boxShadow =
+                "-6px -6px 12px rgba(120, 120, 120, 0.7), 9px 9px 16px rgba(20, 20, 20, 0.7)";
+              document.querySelector("img.shade").style.boxShadow =
+                "-5px -5px 12px rgba(120, 120, 120, 0.7), 9px 9px 16px rgba(20, 20, 20, 0.9)";
+            } else {
+              bd.style.background = "#efeeee";
+              bd.style.color = "rgb(63, 63, 63)";
+              document.querySelector(".card").style.boxShadow =
+                "-9px -9px 16px rgba(255, 255, 255, 0.7), 9px 9px 16px rgba(151, 151, 151, 0.7)";
+              document.querySelector("img.shade").style.boxShadow =
+                "-9px -9px 16px rgba(255, 255, 255, 0.7), 9px 9px 16px rgba(151, 151, 151, 0.7)";
+            }
+
+            setCheck(!check);
+          }}
         />
       </div>
       <img src={moon} alt="moon" className="weather-icon moon" />
