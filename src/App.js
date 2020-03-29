@@ -6,7 +6,7 @@ import Avatar from "./components";
 function App() {
   return (
     <div className="App">
-      <Avatar src="https://picsum.photos/400/400" size="xxl" type="rounded" />
+      <Avatar src="https://picsum.photos/400/400" size="xxl" type="circle" />
     </div>
   );
 }

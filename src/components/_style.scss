@@ -10,8 +10,6 @@ main {
 }
 
 img {
-  width: 60px;
-  height: 60px;
   box-shadow: -9px -9px 16px rgba(255, 255, 255, 0.7),
     9px 9px 16px rgba(151, 151, 151, 0.7);
   opacity: 1;
@@ -35,7 +33,6 @@ img {
   box-shadow: -3px -3px 9px rgb(255, 255, 255), 3px 3px 9px rgb(151, 151, 151);
 }
 
-// Custom Size
 .s {
   width: 30px;
   height: 30px;
