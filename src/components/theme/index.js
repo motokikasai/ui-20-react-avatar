@@ -25,6 +25,7 @@ function Theme() {
                 "-6px -6px 12px rgba(120, 120, 120, 0.7), 9px 9px 16px rgba(20, 20, 20, 0.7)";
               document.querySelector("img.shade").style.boxShadow =
                 "-5px -5px 12px rgba(120, 120, 120, 0.7), 9px 9px 16px rgba(20, 20, 20, 0.9)";
+              document.querySelector(".cover").classList.add("cover-dark");
             } else {
               bd.style.background = "#efeeee";
               bd.style.color = "rgb(63, 63, 63)";
@@ -32,6 +33,7 @@ function Theme() {
                 "-9px -9px 16px rgba(255, 255, 255, 0.7), 9px 9px 16px rgba(151, 151, 151, 0.7)";
               document.querySelector("img.shade").style.boxShadow =
                 "-9px -9px 16px rgba(255, 255, 255, 0.7), 9px 9px 16px rgba(151, 151, 151, 0.7)";
+              document.querySelector(".cover").classList.remove("cover-dark");
             }
 
             setCheck(!check);
