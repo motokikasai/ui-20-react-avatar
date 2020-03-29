@@ -1,4 +1,5 @@
-@import "../components/_style.scss";
+@import "../components/avatar/_style.scss";
+@import "../components/theme/_style.scss";
 
 .App {
   text-align: center;
