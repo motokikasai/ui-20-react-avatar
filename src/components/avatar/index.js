@@ -1,7 +1,8 @@
 import React from "react";
 import Theme from "../theme";
+import PropTypes from "prop-types";
 
-function Avatar({ src, size = "m", type = "rounded" }) {
+function Avatar({ src, size = "m", type = "square" }) {
   return (
     <section>
       <Theme />
@@ -28,5 +29,11 @@ function Avatar({ src, size = "m", type = "rounded" }) {
     </section>
   );
 }
+
+Avatar.propTypes = {
+  src: PropTypes.string,
+  size: PropTypes.oneOf(["s", "m", "l"]),
+  type: PropTypes.string
+};
 
 export default Avatar;
