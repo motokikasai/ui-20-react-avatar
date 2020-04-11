@@ -32,8 +32,8 @@ function Avatar({ src, size = "m", type = "square" }) {
 
 Avatar.propTypes = {
   src: PropTypes.string,
-  size: PropTypes.oneOf(["s", "m", "l"]),
-  type: PropTypes.string
+  size: PropTypes.oneOf(["s", "m", "l", "xl", "xxl"]),
+  type: PropTypes.string,
 };
 
 export default Avatar;
